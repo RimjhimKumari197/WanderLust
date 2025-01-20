@@ -34,7 +34,7 @@
     "dependencies": {
   
       
-    "cloudinary": "^1.41.3",
+    "cloudinary": "^2.5.1",
   
       
     "connect-flash": "^0.1.1",
@@ -73,7 +73,7 @@
     "multer": "^1.4.5-lts.1",
   
       
-    "multer-storage-cloudinary": "^1.2.1",
+    "multer-storage-cloudinary": "^4.0.0",
   
       
     "passport": "^0.7.0",
