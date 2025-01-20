@@ -15,7 +15,7 @@ const listings=require("./routes/listings.js");
 const reviews=require("./routes/reviews.js");
 const session=require("express-session");
 const MongoStore = require('connect-mongo');
-
+const port=process.env.PORT||8080;
 const flash=require("connect-flash");
 const passport=require("passport");
 const LocalStrategy=require("passport-local")
@@ -95,6 +95,6 @@ app.use((err,req,res,next)=>{
     res.status(status).render("error.ejs",{message});
     // res.status(status).send(message);
 });
-app.listen(8080,(res,req)=>{
+app.listen(port,(res,req)=>{
     console.log("app is listening");
 })

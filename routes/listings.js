@@ -15,7 +15,6 @@ router.get("/new",isLoggedin,ListingController.renderNewForm);
 router.route("/")
 .get(wrapAsync(ListingController.index))
 .post(isLoggedin,upload.single('listing[image]'),validateListing,wrapAsync(ListingController.createListing));
-2
 router.route("/:id")
 .get(wrapAsync(ListingController.showListing))
 .put(isLoggedin,isOwner,upload.single('listing[image]'),validateListing,wrapAsync(ListingController.updateListing))
